@@ -1,0 +1,17 @@
+programa {
+	funcao inicio() {
+		real n, maior = 0.0
+		
+	    faca {
+	        escreva(">")
+	        
+	        leia(n)
+	        
+	        se (n != 0 e n > maior) {
+	            maior = n
+	        }
+	    } enquanto (n != 0.0)
+	    
+	    escreva("O maior número digitado foi: ", maior)
+	}
+}
