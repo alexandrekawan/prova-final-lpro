@@ -1,0 +1,39 @@
+programa {
+    inclua biblioteca Matematica --> mat
+    
+	funcao inicio() {
+		real a, b, c, delta, x1, x2
+		
+		escreva("Digite o valor de a: ")
+		
+		leia(a)
+		
+		se (a != 0) {
+		    escreva("Digite o valor de b: ")
+		    
+		    leia(b)
+		    
+		    escreva("Digite o valor de c: ")
+		    
+		    leia(c)
+		    
+		    delta = mat.potencia(b, 2.0) - 4.0 * a * c
+		    
+		    se (delta > 0.0) {
+		        x1 = (-b + mat.raiz(delta, 2.0))/(2.0 * a)
+		        x2 = (-b - mat.raiz(delta, 2.0))/(2.0 * a)
+		        
+		        escreva("A equação possui duas raízes reais iguais a ", x1, " e ", x2, ".")
+		    } senao se (delta == 0.0) {
+		        x1 = (-b + mat.raiz(delta, 2.0))/(2.0 * a)
+		        x2 = x1
+		        
+		        escreva("A equação possui apenas uma raiz real que é igual a ", x1, ".")
+		    } senao {
+		        escreva("A equação não possui raízes reais.")
+		    }
+		} senao {
+		    escreva("A equação não é uma equação do segundo grau pois a = 0.")
+		}
+	}
+}
