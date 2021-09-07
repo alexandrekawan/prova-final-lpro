@@ -1,0 +1,27 @@
+programa {
+    inclua biblioteca Matematica --> mat
+    
+	funcao inicio() {
+		real n1, n2, n3, n4, resultado
+		
+		escreva("Digite um número: ")
+		
+		leia(n1)
+		
+		escreva("Digite outro número: ")
+		
+		leia(n2)
+		
+		escreva("Digite outro número: ")
+		
+		leia(n3)
+	
+	    escreva("Digite outro número: ")
+		
+		leia(n4)
+
+        resultado = mat.potencia(n1, 2.0) + mat.potencia(n2, 2.0) + mat.potencia(n3, 2.0) + mat.potencia(n4, 2.0)
+        
+        escreva("A soma das potências dos números é igual a ", resultado)
+	}
+}
