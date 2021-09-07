@@ -1,0 +1,21 @@
+programa {
+	funcao inicio() {
+		inteiro n
+		
+		escreva("Digite o valor de N: ")
+		
+		leia (n)
+		
+		escreva("(")
+		
+		para (inteiro i = 1; i <= n; i++) {
+		    se (i != n) {
+		        escreva(i, ", ")
+		    } senao {
+		        escreva(i)
+		    }
+		}
+		
+		escreva(")")
+	}
+}
